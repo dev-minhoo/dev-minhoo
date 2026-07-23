@@ -1,16 +1,24 @@
-## Hi there 👋
+## 권민후 · Backend Engineer
 
-<!--
-**dev-minhoo/dev-minhoo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+전자금융 도메인에서 정산·이체 트랜잭션을 다루는 6년차 백엔드 개발자입니다.
+"빠르게"보다 "틀리지 않게"가 먼저인 시스템을 주로 만들어 왔습니다.
 
-Here are some ideas to get you started:
+**주로 다뤄온 문제**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 되돌릴 수 없는 외부 연동에서의 멱등성 확보와 실패 지점별 보상 트랜잭션
+- 대량 배치의 부분 실패 분리 · 선별 재처리 · 진행률 노출
+- 표준 스펙 기반 외부 연동과 OAuth 인증 서버 구축·운영
+- 상환 스케줄 산출 등 금액 계산 로직의 경계 조건(말일 · 윤년 · 단수 처리)
+
+`Java` `Spring Boot` `Spring Security` `MyBatis` `MySQL` `PostgreSQL`
+
+---
+
+### 2026 하반기 — 분산 환경으로 넓히기
+
+단일 DB 트랜잭션으로 풀어온 정합성 문제를, 분산 환경에서는 어떻게 푸는지
+직접 구현하며 정리하고 있습니다. 실무 코드가 아니라 문제만 가져와 새로 만듭니다.
+
+- **8월** · Redis — 멱등성 키 · 분산 락
+- **9월** · Kafka — Outbox 패턴 · 컨슈머 멱등 처리
+- **10월** · 정산 배치 · 대사(reconciliation)
